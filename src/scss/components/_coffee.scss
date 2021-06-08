@@ -1,0 +1,57 @@
+.coffee-content {
+  padding-bottom: 15px;
+}
+.coffee-content h1 {
+  padding-bottom: 15px;
+}
+
+.coffee-page {
+  padding: 0 10%;
+  .coffee-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    min-width: 300px;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+
+    .product-card {
+      width: 50%;
+      text-align: left;
+      padding-bottom: 2rem;
+      padding-right: 50px;
+      p {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+      }
+
+      h2 {
+        padding-bottom: 2rem;
+        align-self: center;
+        background-color: #d1d3d3dc;
+        border-bottom: 1px solid black;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 740px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        
+        h2 {
+          text-align: center;
+          width: 100%;
+          padding-top: 20px;
+        }
+      }
+    } 
+  }
+}

@@ -1,0 +1,80 @@
+.menu-image {
+  display: flex;
+  justify-content: center;
+  .hello {
+    text-align: center;
+  }
+  .hello img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 300px;
+
+  @media (min-width: 740px) {
+    .menu-main {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0 20%;
+
+      background-color: white;
+      h1 {
+        width: 100%;
+      }
+      h2 {
+        padding-top: 1rem;
+        text-align: left;
+      }
+      .alcoholic,
+      .non-alcoholic {
+        width: 100%;
+      }
+
+      .espresso,
+      .filter-specialities,
+      .iced,
+      .hot,
+      .lemonades,
+      .water,
+      .something-to-eat,
+      .sweets,
+      .beverages-1,
+      .beverages-2 {
+        width: 50%;
+        .food {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          p {
+            width: 49%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 300px) {
+    .food {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 1rem;
+      padding-bottom: 0.5rem;
+    }
+    h1 {
+      width: 100%;
+      padding-top: 1rem;
+    }
+    h2 {
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      text-align: left;
+    }
+  }
+}

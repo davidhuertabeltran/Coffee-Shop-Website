@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+@import "components/colors";
+@import "components/coffee";
+@import "components/menu";
+@import "components/story";
+@import "components/navtop";
+@import "components/footer";
+
+
+.home-content {
+
+  @media (min-width: 300px) {
+      display: flex;
+      flex-direction: column;
+      padding: 0 10%;
+      .home-intro {
+          h1,
+          h2 {
+              text-transform: uppercase;
+              font-weight: 400;
+              padding: 10px 0 5px 0;
+          }     
+  
+          h1 {
+              font-size: 4rem;
+          }
+  
+          h2 {
+              font-size: 2.8rem;
+          }
+      }
+  
+      .home-image {
+          display: flex;
+          img {
+              width: 100%;
+              height: auto;
+          }  
+      }
+  
+      .shop-details {
+          display: flex;
+          flex-direction: column;
+          padding: 30px 0;
+          h3,
+          p {
+            text-transform: uppercase;
+          }
+          h3 {
+              font-size: 1.6rem;
+              font-weight: 400;
+              padding: 15px 0;
+          }
+          p {
+              font-size: 0.8rem;
+              padding: 5px 0;
+          }
+      }
+  }
+
+
+  @media (min-width: 740px) {
+      display: flex;
+      flex-direction: column;
+      padding: 0 10%;
+      .home-intro {
+          h1,
+          h2 {
+              text-transform: uppercase;
+              font-weight: 400;
+              padding: 10px 0 5px 0;
+          }     
+  
+          h1 {
+              font-size: 2rem;
+          }
+  
+          h2 {
+              font-size: 1.8rem;
+          }
+      }
+  
+      .home-image {
+          display: flex;
+          img {
+              width: 100%;
+              height: auto;
+          }  
+      }
+  
+      .shop-details {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 30px 0;
+          h3,
+          p {
+            text-transform: uppercase;
+          }
+          h3 {
+              font-size: 1.3rem;
+              font-weight: 400;
+          }
+          p {
+              font-size: 0.8rem;
+          }
+  
+          .hours {
+              width: 33%;
+          }
+  
+          .booking {
+              width: 33%;
+          }
+  
+          .address {
+              width: 33%;
+          }
+      }
+  
+      .map {
+          text-align: center;
+      }
+  }
+  
+}
