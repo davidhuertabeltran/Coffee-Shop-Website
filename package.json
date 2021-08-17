@@ -1,10 +1,11 @@
 {
   "name": "project-name",
   "version": "1.0.0",
+  "homepage": "https://davidhuertabeltran.github.io/Coffee-Shop-Website",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +18,8 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
