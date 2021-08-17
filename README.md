@@ -1,6 +1,6 @@
-This is the repository with a coffee shop website (HTML & CSS only).
+This is the repository with a coffee shop website (HTML & CSS only). You can watch the live version here: https://davidhuertabeltran.github.io/Coffee-Shop-Website/
 
-In order to run the website, you need to:
+Or if you want, you can:
 
 1. clone the repository
 
